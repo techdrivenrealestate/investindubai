@@ -1,27 +1,147 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
 }
 
+/* Header and Hero Section */
 header {
-    background: #007bff;
+    background: linear-gradient(to bottom right, #007bff, #6b9ff7);
     color: white;
-    padding: 20px 10px;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+header .hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header .hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+header .cta-button {
+    background: #ffcd3c;
+    color: #333;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 25px;
+    transition: background 0.3s;
+}
+
+header .cta-button:hover {
+    background: #ffb400;
+}
+
+/* Benefits Section */
+.benefits {
+    background: #fff;
+    padding: 40px 20px;
     text-align: center;
 }
 
-section {
-    margin: 20px;
-    padding: 20px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+.benefits h2 {
+    margin-bottom: 30px;
+    font-size: 2em;
 }
 
-form label {
+.benefit-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.benefit-item {
+    background: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-item h3 {
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+/* Contact Form Section */
+.contact {
+    background: #007bff;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    background: white;
+    color: #333;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.contact-form .form-group label {
     display: block;
-    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form .form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.contact-form .form-group input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.contact-form .submit-button {
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-form .submit-button:hover {
+    background: #0056b3;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
 }
