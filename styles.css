@@ -338,3 +338,21 @@ footer {
 .thank-you-message .back-to-top:hover {
   background-color: #cf8500;
 }
+
+
+/* Add these at the end of styles.css to tweak privacy policy page styling if needed */
+section h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+section p, section ul, section li {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+section ul {
+  list-style: disc;
+  margin-left: 20px;
+}
